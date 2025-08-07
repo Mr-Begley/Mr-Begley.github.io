@@ -1,50 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Personal Webpage</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        h1 {
-            font-weight: bold;
-            font-size: 36px;
-        }
-        h2 {
-            margin-top: 30px;
-            border-bottom: 1px solid white;
-            padding-bottom: 5px;
-        }
-        p {
-            margin: 10px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Doe - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+    }
+
+    h2 {
+      color: #555;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul.skills li {
+      background: #3498db;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      ul.skills {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <h1>James Begley</h1> <!-- Replace with actual name -->
+  <header>
+    <img src="image.png" alt="John Doe">
+    <h1>James Begley</h1>
+    <p>Mechanical & Aerospace Engineer</p>
+  </header>
 
-<img src="image.png" alt="James Begley" width="200" />
+  <div class="container">
+    <div class="section">
+      <h2>About Me</h2>
+      <p>Hello, I am James Begley, I am pusuing my Bacehlor's in Mechanical and Aerospace Engineering at the University of Florida. My research interests include nuclear thermal propulsion (NTP), deep-sea mining, and micro-aerial vehicles.</p>
+    </div>
 
-    <h2>Education</h2>
-    <p>B.S. in Mechanical Engineering, University of Florida, 2029</p>
-    <p>B.S. in Aerospace Engineering, University of Florida, 2029</p>
+    <div class="section">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>JavaScript, Python</li>
+        <li>Research Experience</li>
+        <li>CAD</li>
+       
+      </ul>
+    </div>
 
-    <h2>Research</h2>
-    <p>Nuclear thermal propulsion (NTP), space exploration, deep sea mining.</p>
+    <div class="section contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me via the links below:</p>
+      <a href="mailto:begley.james@ufl.edu">Email</a>
+      <a href="https://linkedin.com/james-atticus-begley" target="_blank">LinkedIn</a>
+    </div>
+  </div>
 
-    <h2>Work Experience</h2>
-    <p>Assistant Manager, Tequesta Golf (2022-2023)</p>
-
-    <h2>Extracurriculars</h2>
-    <p>XC & Track (Varsity).</p>
-    <p>AWRA presenter; national conferences at Seattle and Raleigh.</p>
-    <p>STEPUP (Successful Transition & Enhanced Transition for Undergraduates Program) Mentee.</p>
-    <p>Gator Motor Sports, Swamp Launch.</p>
+  <footer>
+    &copy; 2025 James Begley. All rights reserved.
+  </footer>
 
 </body>
 </html>
